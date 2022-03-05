@@ -1,0 +1,24 @@
+@font-face{
+	font-family: comfortaa;
+	src:url("../fonts/comfortaa/Comfortaa-Light.ttf");
+}
+@font-face{
+	font-family: roboto;
+	src:url("../fonts/roboto/Roboto-Light.ttf");
+}
+@font-face{
+	font-family: roboto-thin;
+	src:url("../fonts/roboto/Roboto-Thin.ttf");
+}
+@font-face{
+	font-family: roboto-regular;
+	src:url("../fonts/roboto/Roboto-Regular.ttf");
+}
+@font-face{
+	font-family: spartan;
+	src:url("../fonts/spartan/Spartan-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: poppins-light;
+  src: url("../fonts/Poppins-Light.ttf");
+}

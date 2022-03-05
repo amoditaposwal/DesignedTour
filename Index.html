@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bookingStyle.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/text.css">
+  <link rel="stylesheet" href="css/resetcode.css">
+  <title>Design Your Tour</title>
+  <link rel="icon" href="images/logo.jpg">
+  <script src="js/main.js"></script>
+  <script src="js/countries.js"></script>
+  <script src="js/bookingList.js"></script>
+  <script src="js/packages.js"></script>
+</head>
+
+<body>
+  <section class="sec1">
+    <div id="welcomePage"></div>
+    <!-- Images of Countries -->
+    <div class="mainBox">
+      <h2>Where would you like to travel!</h2><br>
+      <section style="display:flex;flex-wrap:wrap;justify-content:space-evenly;margin-top:2%;">
+        <div id="countryBox" style="background-image:url('images/india.jpg');" onclick="ShowPrice.setCountry('india');"></div>
+        <div id="countryBox" style="background-image:url('images/egypt.jpg');" onclick="ShowPrice.setCountry('egypt');"></div>
+        <div id="countryBox" style="background-image:url('images/england.jpg');" onclick="ShowPrice.setCountry('england');"></div>
+        <div id="countryBox" style="background-image:url('images/france.jpg');" onclick="ShowPrice.setCountry('france');"></div>
+        <div id="countryBox" style="background-image:url('images/japan.jpg');" onclick="ShowPrice.setCountry('japan');"></div>
+        <div id="countryBox" style="background-image:url('images/usa.jpg');" onclick="ShowPrice.setCountry('usa');"></div>
+        <div id="countryBox" style="background-image:url('images/russia.jpg');" onclick="ShowPrice.setCountry('russia');"></div>
+        <div id="countryBox" style="background-image:url('images/italy.jpg');" onclick="ShowPrice.setCountry('italy');"></div>
+      </section>
+    </div>
+    <div class="budgetInfo">
+      <p>minimum budget to travel in <span><span></p>
+      <div class="btnNext" onclick="changeInterface();">Continue</div>
+    </div>
+    <div id="curnSelct">
+      <select id="selectBox" onchange="changeCurrency();">
+        <option value="0">Select currency:</option>
+        <option value="1">Ruppees</option>
+        <option value="2">USD</option>
+        <option value="3">Euro</option>
+        <option value="5">Pound</option>
+        <option value="6">Yen</option>
+      </select>
+    </div>
+  </section>
+  <!--Main Ends-->
+
+  <section class="sec2" style="display:none;" >
+    <div class="crcl1"></div>
+    <section class="backg">
+      <div id="fcltBox"><div class="crcl2"></div></div>
+      <div id="pckgDetl">
+        <h2>choose your package</h2>
+        <div class="pckgs" onclick="showFaclt.setPackage('basic');">basic</div>
+        <div class="pckgs" onclick="showFaclt.setPackage('regular');">regular</div>
+        <div class="pckgs" onclick="showFaclt.setPackage('deluxe');">deluxe</div>
+        <div class="grndBox">
+          <p>total : <span></span></p>
+        </div>
+        <button class="checkBtn" onclick="checkOut();">Checkout</button>
+        <button class="checkBtn" onclick="changeInterface();" style="right:2%; bottom:2%;">Back</button>
+      </div>
+    </section>
+  </section>
+  <div class="hidden">
+    <div class="side2"></div>
+    <h1>ThankYou</h1>
+    <div class="circle1"></div>
+    <div class="circle2"></div>
+    <div class="circle3"></div>
+    <div class="circle4"></div>
+    <div class="circle5"></div>
+    <div class="side"></div>
+  </div>
+</body>
+</html>

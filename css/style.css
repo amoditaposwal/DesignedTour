@@ -1,0 +1,120 @@
+#welcomePage{
+  width: 100%;
+  height: 100vh;
+  background-image: url("../images/img3.jpg");
+  background-position: center;
+  background-size: 100%;
+  filter: blur(3px);
+}
+.mainBox{
+  width: 50%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-color: cornsilk;
+  box-shadow: 4px 2px 8px rgba(0,0,0,0.5);
+  overflow: auto;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius:20px;
+}
+.mainBox h2{
+  width: 100%;
+  text-align: center;
+  padding: 35px 0px;
+  overflow: hidden;
+  font-size: 34px;
+  font-family: poppins-light;
+  color: brown;
+  opacity: 0.8;
+  letter-spacing: 1.3px;
+}
+#countryBox{
+  width: 120px;
+  height: 120px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.6);
+  padding: 10px;
+  background-color: white;
+  margin: 40px 20px;
+  transition: 0.4s;
+  background-size:contain;
+  background-repeat:no-repeat;
+  background-position:center;
+}
+#countryBox:hover, .btnNext:hover{
+  cursor: pointer;
+  transform: scale(1.2);
+  box-shadow: 2px 2px 20px coral;
+}
+.budgetInfo{
+  width: 50%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: transparent;
+  overflow: hidden;
+}
+.budgetInfo p{
+  width: calc(100% - 45px);
+  height: auto;
+  box-shadow: 2px 2px 20px black;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: cornsilk;
+  text-align: left;
+  line-height: 65px;
+  font-size: 40px;
+  text-transform: capitalize;
+  color: brown;
+  font-family: spartan;
+  font-weight: 100;
+  margin: 36% auto;
+  opacity:0;
+  word-spacing: 2.5px;
+  transition: 0.4s;
+}
+#curnSelct{
+  position: absolute;
+  right: 1%;
+  bottom: 2%;
+  background-color: orange;
+  opacity: 0.9;
+  box-shadow: 3px 3px 10px rgba(0,0,0,0.6);
+  color: black;
+  padding: 10px;
+  style=width:200px;
+}
+select{
+  background-color: transparent;
+  border: none;
+  opacity: 0.9;
+  font-size: 20px;
+  font-family: poppins-light;
+  font-weight: bold;
+}
+select:focus{
+  outline: none;
+}
+.btnNext{
+    height: 60px;
+    position: absolute;
+    background-color: orange;
+    right: 4%;
+    line-height: 58px;
+    padding: 0px 25px;
+    bottom: 29%;
+    opacity: 0;
+    border-radius: 15px;
+    color: whitesmoke;
+    z-index: +100;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    text-align: center;
+    font-size: 25px;
+    font-family: spartan;
+    font-weight: 100;
+    transition: 0.4s;
+}
